@@ -1,4 +1,4 @@
-public class MyList {
+public class MyList implements MyArrayList{
 
     private static final int DEFAULT_SIZE = 10; // размер массива по умолчанию
     private int[] elements; // объявление переменной массива

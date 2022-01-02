@@ -1,21 +1,16 @@
-public interface MyArrayList<T> {
+public interface MyArrayList {
 
-    boolean add(T t);
+    void add(int element);
 
-    boolean add(int index);
+    int get(int index);
 
-    T get(int index);
+    void set(int index, int element);
 
-    T get(T t);
+    void remove(int element);
 
-    void set(int index, T t);
-
-    void delete(int index);
-
-    void delete(T t);
+    void removeByIndex(int index);
 
     int size();
 
     void sort();
-
 }
