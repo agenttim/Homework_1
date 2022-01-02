@@ -53,6 +53,18 @@ public class MyList {
         size--;
     }
 
+    public void sort() {
+        for (int a = 1; a < size; a++) {
+            for (int b = size - 1; b >= a; b--) {
+                if (elements[b-1] > elements[b]) {
+                    int c = elements[b-1];
+                    elements[b-1] = elements[b];
+                    elements[b] = c;
+                }
+            }
+        }
+    }
+
 
 
 
