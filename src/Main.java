@@ -8,7 +8,7 @@ public class Main {
         for (int i = 0; i < myList.size(); i++)
             System.out.println(myList.get(i));
 
-        System.out.println("Размер массива: " + myList.size());
+        System.out.println("В массиве хранится: " + myList.size() + " элементов");
 
 /*        myList.remove(10);
         for (int i = 0; i < myList.size(); i++)

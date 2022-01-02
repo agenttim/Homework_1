@@ -9,11 +9,13 @@ public class MyList {
     private int[] elements; // объявление переменной массива
     private int size; // счетчик заполнения массива
 
+    // Конструктор, создающий массив со значением по умолчанию
     public MyList() {
         this.elements = new int[DEFAULT_SIZE];
         this.size = 0;
     }
 
+    // Метод, добавляющий новый элемент в конец массива
     public void add(int element) {
         if (size == elements.length) {
             resize();
@@ -22,6 +24,7 @@ public class MyList {
         size++;
     }
 
+    // Метод, увеличивающий емкость массива на 50%
     private void resize() {
         int[] newElements = new int[elements.length + elements.length / 2];
         for (int i = 0; i < size; i++) {
@@ -30,10 +33,12 @@ public class MyList {
         this.elements = newElements;
     }
 
+    // Метод, возвращающий количество хранящихся в массиве элементов
     public int size() {
         return size;
     }
 
+    // Метод, возвращающий значение элемента по индексу в массиве
     public int get(int index) {
         if (index >= 0 && index < size) {
             return elements[index];
@@ -53,6 +58,7 @@ public class MyList {
         size--;
     }
 
+    // Метод, реализующий пузырьковую сортировку
     public void sort() {
         for (int a = 1; a < size; a++) {
             for (int b = size - 1; b >= a; b--) {
