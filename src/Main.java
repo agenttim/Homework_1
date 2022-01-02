@@ -42,5 +42,15 @@ public class Main {
         System.out.println();
 
         System.out.println("________________________________________________");
+
+        MyList myList2 = new MyList();
+        myList2.add(-25);
+        myList2.add(0);
+        myList2.add(13);
+        myList2.add(124);
+        myList2.add(543);
+
+        System.out.print("Массивы равны? ");
+        System.out.println(myList1.compare(myList1, myList2));
     }
 }

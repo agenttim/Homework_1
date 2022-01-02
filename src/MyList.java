@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class MyList implements MyArrayList{
 
     private static final int DEFAULT_SIZE = 10; // размер массива по умолчанию
@@ -79,6 +81,20 @@ public class MyList implements MyArrayList{
     // Метод, заменяющий элемент в массиве по заданному индексу и новому значению
     public void set(int index, int element) {
         elements[index] = element;
+    }
+
+    // Метод, сравнивающий два массива по содержимому
+    public boolean compare(MyList myList1, MyList myList2) {
+        if (myList1.size == myList2.size) {
+            for (int i = 0; i < myList1.size; i++) {
+                if (myList1.get(i) != myList2.get(i)) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 
