@@ -1,8 +1,3 @@
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-
 public class MyList {
 
     private static final int DEFAULT_SIZE = 10; // размер массива по умолчанию
