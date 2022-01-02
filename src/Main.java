@@ -13,6 +13,7 @@ public class Main {
 
         myList.remove(65);
         myList.removeByIndex(2);
+        myList.set(5, 888);
         for (int i = 0; i < myList.size(); i++)
             System.out.println(myList.get(i));
 

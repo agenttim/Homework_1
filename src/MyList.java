@@ -75,6 +75,11 @@ public class MyList {
             }
         }
     }
+
+    // Метод, заменяющий элемент в массиве по заданному индексу и новому значению
+    public void set(int index, int element) {
+        elements[index] = element;
+    }
 }
 
 
