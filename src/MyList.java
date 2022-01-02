@@ -48,14 +48,24 @@ public class MyList {
         }
     }
 
+    // Метод, удаляющий элемент массива по значению
     public void remove(int element) {
+
         for (int i = 0; i < size; i++) {
             if (elements[i] == element) {
-                System.arraycopy(elements, i + 1, elements, i, size - i);
+                System.arraycopy(elements, i+1, elements, i, size - i - 1);
                 break;
             }
         }
         size--;
+    }
+
+    // Метод, удаляющий элемент массива по индексу
+    public void removeByIndex(int index) {
+        if (index >= 0 && index < size) {
+            System.arraycopy(elements, index + 1, elements, index, size - index - 1);
+            size--;
+        }
     }
 
     // Метод, реализующий пузырьковую сортировку
@@ -70,20 +80,6 @@ public class MyList {
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 

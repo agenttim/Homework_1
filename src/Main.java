@@ -9,10 +9,14 @@ public class Main {
             System.out.println(myList.get(i));
 
         System.out.println("В массиве хранится: " + myList.size() + " элементов");
+        System.out.println();
 
-/*        myList.remove(10);
+        myList.remove(65);
+        myList.removeByIndex(2);
         for (int i = 0; i < myList.size(); i++)
-            System.out.println(myList.get(i));*/
+            System.out.println(myList.get(i));
+
+        System.out.println("В массиве хранится: " + myList.size() + " элементов");
 
         System.out.println("________________________________________________");
 
@@ -37,24 +41,5 @@ public class Main {
         System.out.println();
 
         System.out.println("________________________________________________");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
